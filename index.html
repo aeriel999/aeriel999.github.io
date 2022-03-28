@@ -36,6 +36,8 @@
                 setInterval(clockPainting, 1000);
             }
         </script>
+        <link rel="stylesheet" href="tic-tac-toe-master/html-ready/styles.css">
+        <title>Tic tac toe</title>
     </head>
     <body background="images/bg .jpg">
         <table border="1" align="center" cellpadding="10">
@@ -129,6 +131,20 @@
                     <p align="center"><input type="submit" value="Зареєструватись" ><input type="reset" value="Очистити"></p>
                 </form>
                 <hr>
+                <span class="game-title" id="message">Ходит игрок X</span>
+  <div class="game">
+    <div class="game-item" data-ceil="1"></div>
+    <div class="game-item" data-ceil="2"></div>
+    <div class="game-item" data-ceil="3"></div>
+    <div class="game-item" data-ceil="4"></div>
+    <div class="game-item" data-ceil="5"></div>
+    <div class="game-item" data-ceil="6"></div>
+    <div class="game-item" data-ceil="7"></div>
+    <div class="game-item" data-ceil="8"></div>
+    <div class="game-item" data-ceil="9"></div>
+  </div>
+  <button id="reset-game">Очистить</button>
+  <script src="tic-tac-toe-master/main.js"></script>
                 </td>
 
                 <!--Текст сайта-->
