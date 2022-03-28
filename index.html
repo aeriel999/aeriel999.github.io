@@ -9,6 +9,7 @@
                 font-size: 2em;
             }
         </style>
+        <script src="js/clock1.js"></script>
         <script type="text/javascript">
             function send()
             {
@@ -28,6 +29,11 @@
                            alert('Заповніть всі поля');
                            return false;
                 }
+            }
+        </script>
+        <script>
+            window.onload = function() {
+                setInterval(clockPainting, 1000);
             }
         </script>
     </head>
@@ -70,6 +76,8 @@
             <tr>
                 <!--Меню зліва-->
                 <td width="30%" valign="top">
+                    <center><canvas id="canvas" height="120" width="120"></canvas></center>
+                    <hr>
                     <font size="5" color="navy"><h2>Новини</h2></font>
                     <font size="5">
                         <ul>
